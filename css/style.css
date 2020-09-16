@@ -1,0 +1,31 @@
+/* colors */
+:root {
+--bright-green: #63A63E;
+--red: #EE3643;
+--white: #ffffff;
+--dark-blue: #293449;
+--purple-blue: #32425C;
+--black: #000000;
+--light-grey: #F3F7F9;
+--orange: #FFC047;
+--sky-blue: #3BBCE3;
+--light-purple: #DC91D8;
+--light-green: #8ED78F;
+--sort-of-light-grey: #F9F5F0;
+--different-light-grey: #F1F5F7;
+--light-orange: #FFD180;;
+/* colors catalog */
+--white-grey: #F2F6F8;
+--light-red-grey: #F7F3EC;
+--silver: #C5C5C5;
+--dark-grey: #A9A9A9;
+--dark-blue: #212A3A;
+/* color link style */
+--more-bright-green: #5FBB2D;
+--more-dark-blue: #161D29;
+--blood-red: #BA2732;
+--differrent-dark-blue: #3D546F;
+--light-blood-red: #CA2C37;
+--more-bright-green: #5FBB2D;
+--dark-green: #518534;
+}
