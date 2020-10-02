@@ -17,8 +17,8 @@
           <img src="img/tehnomart-logo.svg" width="106.83" height="16.9" alt="Логотип Техномарта">
         </a>
         <p class="search">Поиск</p>
-        <a class="market" href="">Закладки</a>
-        <a class="cart" href="">Корзина</a>
+        <a class="market" href="">Закладки: 0</a>
+        <a class="cart" href="">Корзина: 0</a>
         <a class="order" href="">Оформить заказ</a>
       </div>
      </section>
@@ -29,8 +29,8 @@
          и инструментов для ремонта</p>
       <a class="header-shop-tel" href="tel:+78125550555">+7(812)555-05-55</a>
       <p class="header-shop-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a class="header-button-link" href="">Войти</a>
-      <a class="header-button-link" href="">Регистрация</a>
+      <a class="header-button-link login" href="">Войти</a>
+      <a class="header-button-link registration" href="">Регистрация</a>
      </div>
 
       <nav class="main-nav container">
@@ -52,6 +52,7 @@
       <section class="assortment-list">
         <h2 class="visibility">Ассортимент</h2>
         <div class="assortment-item">
+          <div class="new">new</div>
           <p class="assortment-item-text">Материалы</p>
           <a class="assortment-item-button" href="">На любой вкус</a>
         </div>
@@ -66,8 +67,10 @@
         <div class="assortment-item-special">
           <p class="assortment-item-special-text"><span>Перфораторы</span><br>
             Настоящие мужские игрушки</p>
-          <button class="button-special-back" type="button">Назад</button>
-          <button class="button-special-next" type="button">Вперед</button>
+          <div class="slider">
+           <button class="button-slider" type="button" aria-label="Назад"></button>
+           <button class="button-slider slider-active" type="button" aria-label="Вперед"></button>
+          </div>
           <a class="button" href="catalog.html">Открыть каталог</a>
         </div>
         <div class="assortment-item">
