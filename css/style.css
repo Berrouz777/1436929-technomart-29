@@ -56,6 +56,16 @@ img {
   position: absolute;
   visibility: hidden;
 }
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding-top: 11px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
 /* Первая часть хедера */
 .main-header {
@@ -238,15 +248,14 @@ img {
   list-style: none;
   margin: 0 53px;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .list-nav a {
-  outline: 3px solid green; /*временная обводка*/
+  padding: 16px 28px 20px;
   display: block;
-  padding-top: 16px;
-  padding-bottom: 20px;
   color: var(--white);
 }
 
@@ -266,7 +275,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-.new {
+.assortment-item .new {
   position: absolute;
   width: 100px;
   height: 30px;
@@ -280,7 +289,7 @@ img {
   box-sizing: border-box;
   transform: rotate(45deg);
   left: 225px;
-  top: 5px;
+  top: 10px;
 }
 .assortment-item:first-of-type {
   background-color: var(--some-orange);
@@ -390,54 +399,48 @@ img {
   text-transform: uppercase;
 }
 .slider {
-grid-column: 2/3;
-grid-row:3/4;
-margin-left: 79px; /*Не иогу разобраться как реализовать позицию кнопок-батонов*/
+  padding-top: 19px;
+  width: 30px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-left: 55px;
+  display: flex;
+  justify-content: space-between;
 }
-/*.button-back {
-  position: absolute;
-  left: 295px;
-  top: 220px;
+.slider button {
   padding: 0;
   width: 10px;
   height: 10px;
-  border-radius: 50%;
-  border: 1px solid var(--white);
-  background-color: var(--white);
-}
-.button-next {
-  position: absolute;
-  left: 315px;
-  top: 220px;
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
   border: 2px solid var(--white);
+  background-color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.slider .button-slider-active {
   background-color: var(--red);
 }
-.button-back::before {
-  position: absolute;
+.slider .button-back::before {
   content: "";
+  position: absolute;
   width: 22px;
   height: 40px;
-  left: -260px;
-  top: -78px;
+  left: 24px;
+  top: 122px;
   background-image: url("../img/icon-left.svg");
 }
-.button-next::before {
-  position: absolute;
+.slider .button-next::before {
   content: "";
+  position: absolute;
   width: 22px;
   height: 40px;
-  transform: rotate(180deg);
   right: 20px;
   top: 122px;
   background-image: url("../img/icon-left.svg");
-}*/
+  transform: rotate(180deg);
+}
 .assortment-item-special .button {
   width: 192px;
-  height: 38px;
   padding-top: 11px;
   box-sizing: border-box;
   text-align: center;
@@ -465,15 +468,12 @@ margin-left: 79px; /*Не иогу разобраться как реализо�
 .popular-section-text {
   font-size: 30px;
   line-height: 30px;
-}
-.button {
-  font-size: 14px;
-  line-height: 18px;
-  background-color: var(--red);
-  color: var(--white);
-  border: none;
+  margin-top: 29px;
+  margin-left: 28px;
+  color: var(--purple-blue);
 }
 .popular-list {
+  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr;
@@ -481,6 +481,7 @@ margin-left: 79px; /*Не иогу разобраться как реализо�
   grid-gap: 20px;
 }
 .popular-item {
+  position: relative;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   border: 1px solid var(--border-color);
@@ -488,6 +489,24 @@ margin-left: 79px; /*Не иогу разобраться как реализо�
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
+}
+.popular-item .new {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  color: var(--white);
+  background-color: var(--red);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 8px;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  left: 147px;
+  top: 8px;
 }
 .popular-item-discription {
   min-height: 118px;
@@ -498,9 +517,13 @@ margin-left: 79px; /*Не иогу разобраться как реализо�
   justify-content: space-between;
 }
 .popular-item-text {
+  margin: 0 17px;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+}
+.popular-item-img {
+  margin: auto;
 }
 .old-price {
   font-size: 17px;
@@ -508,13 +531,36 @@ margin-left: 79px; /*Не иогу разобраться как реализо�
   color: var(--dark-grey);
 }
 .button-item {
+  width: 141px;
+  height: 38px;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 10px;
   font-size: 17px;
   line-height: 18px;
 }
-
-.popular-item img {
-  margin: auto 0;
+.button-item::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -15px;
+  top: -17px;
+  transform: rotate(45deg);
+  background-color: var(--light-grey);
 }
+.button-item::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: -15px;
+  bottom: -17px;
+  transform: rotate(45deg);
+  background-color: var(--light-grey);
+}
+
 /* Сервисы */
 .service {
   background-color: var(--different-light-grey);
