@@ -216,6 +216,7 @@ img {
   position: relative;
   margin-right: 10px;
   padding-left: 45px;
+  padding-right: 57px;
   grid-column: 3/4;
   grid-row: 1/2;
 }
@@ -238,8 +239,8 @@ img {
 .main-nav {
   background-color: var(--purple-blue);
   height: 60px;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin-top: 25px;
+  /* margin-bottom: 60px; */
   box-shadow: inset 0 -5px 0 #293449;
 }
 .list-nav {
@@ -786,6 +787,7 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .social-list-icons {
   margin: 0;
@@ -834,5 +836,6 @@ color: var(--light-orange);
   margin-left: 118px;
 }
 .footer-text-last:last-of-type {
+  padding-left: 50px;
   margin-right: 14px;
 }
