@@ -267,11 +267,20 @@ img {
   top: 14px;
   background-image: url("../img/icon-login.svg");
 }
-.my-profile div {
-  align-items: center;
+.order-and-login {
+  display: flex;
+  justify-content: space-between;
+}
+.order-and-login div {
+  outline: 1px solid green;
+  width: 4px;
+  height: 4px;
+  background-color: var(--purple-blue);
+  border-radius: 50%;
 }
 .my-order,
 .my-login {
+  outline: 1px solid green;
   font-size: 16px;
   line-height: 18px;
   color: var(--purple-blue);
@@ -556,8 +565,8 @@ img {
   top: 8px;
 }
 .popular-item-discription {
-  outline: 1px solid red;
-  min-height: 118px;
+  /* outline: 1px solid red; */
+  min-height: 128px;
   margin-bottom: 21px;
   display: flex;
   flex-direction: column;
@@ -565,18 +574,18 @@ img {
   justify-content: space-between;
 }
 .popular-item-text {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   margin: 0 17px;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
 }
 .popular-item-img {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   margin: auto;
 }
 .old-price {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   font-size: 17px;
   line-height: 18px;
   color: var(--dark-grey);
@@ -1220,12 +1229,16 @@ color: var(--light-orange);
 }
 /*modal*/
 .modal-write-us {
-  display: block;
-  position: relative;
+  z-index: 10;
+  display: none;
+  left: 31%;
+  top: 12%;
+  position: fixed;
   width: 620px;
   margin: 0 auto;
   border-top: 7px solid var(--red);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--white);
 }
 .modal-container {
   width: 460px;
@@ -1263,7 +1276,7 @@ color: var(--light-orange);
   width: 100%;
   box-sizing: border-box;
   border: 2px solid var(--silver);
-  padding: 7px 12px;
+  padding: 5px 12px;
   border-radius: 3px;
   margin-top: 11px;
   margin-bottom: 13px;
@@ -1296,4 +1309,15 @@ color: var(--light-orange);
   height: 21px;
   top: 14px;
   right: 11px;
+}
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 12%;
+  left: 22%;
+  width: 943px;
+  height: 449px;
+  margin: 0 auto;
+  border-top: 7px solid var(--red);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
