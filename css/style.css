@@ -1211,3 +1211,33 @@ color: var(--light-orange);
   font-size: 13px;
   line-height: 24px;
 }
+/*modal*/
+.modal-write-us {
+  width: 620px;
+  margin: 0 auto;
+  border-top: 7px solid var(--red);
+}
+.modal-container {
+  width: 460px;
+  margin: 0 auto;
+}
+.modal-form > .input-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.input-container p {
+  margin: 0;
+  outline: 1px solid red;
+}
+.input-container .modal-name,
+.input-container .modal-email {
+  width: 50%;
+}
+.input-container input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.modal-form > div:last-child {
+  width: 100%;
+  background-color: #f4f4f4;
+}
