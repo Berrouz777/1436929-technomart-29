@@ -1008,10 +1008,10 @@ color: var(--light-orange);
 .range-filter-controls {
   position: relative;
   height: 41px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: var(--light-red-grey);
-  margin-bottom: 9px;
-  padding-top: 39px;
+  margin-bottom: 12px;
+  padding-top: 41px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -1026,7 +1026,7 @@ color: var(--light-orange);
 }
 .range-filter-controls .toggle {
   position: absolute;
-  top: 29px;
+  top: 31px;
   left: 0;
   width: 4px;
   height: 4px;
@@ -1050,11 +1050,10 @@ color: var(--light-orange);
 .price-controls input {
   font-size: 17px;
   line-height: 18px;
-  margin: 0;
-  width: 75px;
-  padding: 10px;
+  width: 65px;
+  padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: var(--light-red-grey);
   text-align: center;
 }
@@ -1071,6 +1070,7 @@ color: var(--light-orange);
 }
 .filter-option {
   margin-bottom: 20px;
+  margin-top: 17px;
   padding-left: 35px;
 }
 .filter-option label {
@@ -1161,6 +1161,7 @@ color: var(--light-orange);
   /* outline: 2px solid grey; */
   font-family: 'PT Sans', sans-serif;
   text-transform: inherit;
+  padding: 0;
 }
 .sorting .sorting-button:first-of-type {
   color: var(--red);
@@ -1178,18 +1179,42 @@ color: var(--light-orange);
 .sorting .sorting-button:nth-of-type(3) {
   margin-left: 65px;
 }
+.sorting .sorting-link:first-of-type {
+  transform: rotate(180deg);
+  margin-left: 46px;
+}
+.sorting .sorting-link:last-of-type {
+  margin-left: 21px;
+}
+/*.sorting-link:active path {
+  fill: var(--red);
+}*/
 .catalog-main .catalog-instrument {
   width: 700px;
   /* outline: 2px solid green; */
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 10px;
   grid-column: 2/3;
   grid-row: 4/5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-gap: 20px;
+}
+.catalog-instrument .popular-item-img {
+  padding-top: 22px;
+}
+.catalog-instrument .popular-item-discription {
+  padding-top: 15px;
+  min-height: 160px;
+}
+.catalog-instrument .price {
+  margin-top: 10px;
+}
+.catalog-instrument .old-price {
+  margin-top: -10px;
 }
 .pagination {
   /* outline: 2px solid green; */
