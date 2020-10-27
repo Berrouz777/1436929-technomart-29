@@ -637,13 +637,52 @@ img {
 .popular-item-img {
   /* height: 50%; */
   margin: auto;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
 }
 .popular-item-img img {
   vertical-align: middle;
   margin: auto;
-  outline: 2px solid lightgreen;
+  /* outline: 2px solid lightgreen; */
   margin-right: 5px;
+}
+.popular-item-img button {
+  display: none;
+  position: relative;
+  width: 135px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 5px;
+  /* outline: 1px solid green; */
+  border-radius: 2px;
+}
+.popular-item-img .buy-now {
+  margin-bottom: 10px;
+  background-color: var(--bright-green);
+  color: var(--white);
+  box-shadow: inset 0px -3px 0px #367315;
+}
+.popular-item-img .buy-now::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 10px;
+  left: 25px;
+  background-image: url("../img/cart.svg");
+  opacity: 0.3;
+}
+.popular-item-img .order-now {
+  border: 3px solid var(--bright-green);
+  color: var(--purple-blue);
+  height: 38px;
+  box-sizing: border-box;
 }
 .popular-item-discription {
   /* outline: 2px solid orange; */
@@ -813,12 +852,17 @@ img {
   background-color: var(--purple-blue);
   color: var(--white);
   text-align: left;
+  cursor: pointer;
+}
+.service-button:hover:not(.service-button-active) {
+  background-color: var(--dark-blue);
 }
 .service-button-active {
   box-shadow: none;
   background-color: var(--white);
   color: var(--purple-blue);
 }
+
 .service h3 {
   margin: 0;
   margin-bottom: 30px;
@@ -960,6 +1004,19 @@ img {
 .footer-menu-item:last-of-type {
   color: var(--light-orange);
 }
+.footer-menu-item a:hover {
+  border-bottom: 1px solid var(--white);
+}
+.footer-menu-item:nth-of-type(6) a:hover,
+.footer-menu-item:nth-of-type(7) a:hover,
+.footer-menu-item:nth-of-type(8) a:hover,
+.footer-menu-item:last-of-type a:hover {
+  border-color: var(--light-orange);
+}
+.footer-menu-item a:active {
+  opacity: 0.5;
+  border: none;
+}
 .socials {
   background-color: var(--dark-blue);
   padding-top: 36px;
@@ -993,6 +1050,9 @@ img {
   height: 40px;
   border-radius: 50%;
 }
+.social-button:hover {
+  background-color: var(--red);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1013,6 +1073,13 @@ img {
 }
 .footer-text-last a {
 color: var(--light-orange);
+}
+.footer-text-last a:hover {
+  border-bottom: 1px solid var(--light-orange);
+}
+.footer-text-last a:active {
+  border: none;
+  color: var(--red);
 }
 .footer-text-last:nth-of-type(2) {
   margin-left: 118px;
@@ -1205,7 +1272,22 @@ color: var(--light-orange);
 .filter-item:last-of-type .filter-option:first-of-type {
   margin-top: 15px;
 }
-.filter-checkbox + label::before {
+.filter-checkbox + label svg {
+  position: absolute;
+  left: -35px;
+  top: -3px;
+}
+.filter-checkbox:checked + label .checkbox-on {
+  display: none;
+}
+.filter-checkbox + label .checkbox-off {
+  display: block;
+}
+.checkbox-on:hover path,
+.checkbox-off:hover path{
+  fill: #b5b5b5;
+}
+/*.filter-checkbox + label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1225,8 +1307,22 @@ color: var(--light-orange);
   left: -35px;
   top: -3px;
   background-image: url("../img/checkbox-on.svg");
+}*/
+.radio-icon {
+  position: absolute;
+  left: -35px;
+  top: -3px;
 }
-.filter-radio + label::before {
+.filter-radio + label path:nth-of-type(2) {
+  display: none;
+}
+.filter-radio:checked + label path:nth-of-type(2) {
+  display: block;
+}
+.radio-icon:hover > path {
+  fill: #b5b5b5;
+}
+/*.filter-radio + label::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -1245,7 +1341,7 @@ color: var(--light-orange);
   top: 5px;
   border-radius: 50%;
   background-color: #c5c5c5;
-}
+}*/
 .form-filter .form-button {
   font-family: 'PT Sans', sans-serif;
   font-size: 13px;
@@ -1299,26 +1395,28 @@ color: var(--light-orange);
 .sorting .sorting-button:nth-of-type(3) {
   margin-left: 65px;
 }
-.sorting-button:hover {
+.sorting .sorting-button:hover:not(.sorting-button-active) {
   color: var(--black);
   border-bottom: 5px solid var(--red);
   border-width: thin;
 }
-.sorting-button:active {
+.sorting .sorting-button-active,
+.sorting .sorting-button:active:not(.sorting-button-active) {
   color: var(--red);
   border: none;
 }
-.sorting .sorting-link:first-of-type {
+.sorting-link:first-of-type {
   transform: rotate(180deg);
   margin-left: 46px;
 }
-.sorting .sorting-link:last-of-type {
+.sorting-link:last-of-type {
   margin-left: 21px;
 }
-.sorting-link:hover path {
+.sorting-link:hover:not(.sorting-link-active) path {
   fill: var(--black);
 }
-.sorting-link:active path {
+.sorting-link:active:not(.sorting-link-active) path,
+.sorting-link-active path {
   fill: var(--red);
 }
 
@@ -1343,47 +1441,8 @@ color: var(--light-orange);
 }
 /*.catalog-instrument .popular-item-img {
   outline: 1px solid red;
-}*/
-.popular-item-img button {
-  display: none;
-  position: relative;
-  width: 135px;
-  height: 38px;
-  border: none;
-  background-color: transparent;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: 'Cuprum', Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: normal;
-  text-align: center;
-  margin-top: 5px;
-  /* outline: 1px solid green; */
-  border-radius: 2px;
 }
-.popular-item-img .buy-now {
-  margin-bottom: 10px;
-  background-color: var(--bright-green);
-  color: var(--white);
-  box-shadow: inset 0px -3px 0px #367315;
-}
-.buy-now::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 10px;
-  left: 25px;
-  background-image: url("../img/cart.svg");
-  opacity: 0.3;
-}
-.popular-item-img .order-now {
-  border: 3px solid var(--bright-green);
-  color: var(--purple-blue);
-  height: 38px;
-  box-sizing: border-box;
-}
-/*.catalog-instrument .popular-item-discription {
+.catalog-instrument .popular-item-discription {
   outline: 1px solid red;
   display: flex;
   justify-content: space-between;
@@ -1430,10 +1489,16 @@ color: var(--light-orange);
 .pagination  > .pagination-item {
   padding: 10px 30px;
 }
+.pagination-item:hover:not(.page-active) {
+  border-color: var(--silver);
+}
+.pagination-item:active:not(.page-active) {
+  border-color: var(--red);
+}
  .page-active {
   background-color: var(--red);
   color: var(--white);
-  border: none;
+  border-color: var(--red);
 }
 .about-instrument .container {
   display: flex;
