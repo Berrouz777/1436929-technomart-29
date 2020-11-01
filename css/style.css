@@ -706,7 +706,7 @@ img {
   box-sizing: border-box;
 }
 .popular-item-discription {
-  outline: 2px solid orange;
+  /* outline: 2px solid orange; */
   min-height: 152px;
   /* display: flex; */
   /*flex-direction: column;
@@ -717,7 +717,7 @@ img {
   grid-template-rows: auto auto auto;
 }
 .popular-item-text {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   margin: 0;
   /* margin: 12px 17px; */
   margin: 14px 17px 6px 17px;
@@ -728,7 +728,7 @@ img {
   grid-row: 1/2;
 }
 .old-price {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   font-size: 17px;
   line-height: 18px;
   height: 18px;
@@ -739,7 +739,7 @@ img {
   grid-row: 2/3;
 }
 .price {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   position: relative;
   height: 30px;
   width: 109px;
@@ -919,7 +919,7 @@ img {
 
 /* О нас */
 .about-company {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   margin: 70px auto 68px auto;
   display: flex;
   flex-wrap: wrap;
@@ -1566,7 +1566,7 @@ color: var(--light-orange);
 .modal-write-us {
   z-index: 10;
   display: none;
-  left: 31%;
+  left: 27%;
   top: 12%;
   position: fixed;
   width: 620px;
@@ -1649,10 +1649,13 @@ color: var(--light-orange);
   display: none;
   position: fixed;
   top: 12%;
-  left: 22%;
+  left: 15%;
   width: 943px;
   height: 449px;
   margin: 0 auto;
   border-top: 7px solid var(--red);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+.modal {
+  display: block;
 }
