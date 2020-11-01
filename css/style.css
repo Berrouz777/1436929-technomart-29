@@ -625,7 +625,7 @@ img {
 }
 .popular-item {
   position: relative;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   border: 1px solid var(--border-color);
   display: flex;
@@ -844,7 +844,7 @@ img {
 }
 .text {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 70px;
@@ -1154,7 +1154,7 @@ color: var(--light-orange);
   margin-right: 19px;
 }
 .breadcrumbs a {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: bold;
@@ -1190,7 +1190,7 @@ color: var(--light-orange);
   grid-row: 2/3;
 }
 .catalog-main .filter {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   /* outline: 2px solid green; */
   text-transform: uppercase;
   grid-column: 1/2;
@@ -1285,6 +1285,9 @@ color: var(--light-orange);
   border-radius: 3px;
   background-color: var(--light-red-grey);
   text-align: center;
+}
+.price-min input {
+  padding-left: 20px;
 }
 .price-controls span {
   font-size: 16px;
@@ -1383,7 +1386,7 @@ color: var(--light-orange);
   background-color: #c5c5c5;
 }*/
 .form-filter .form-button {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1411,7 +1414,7 @@ color: var(--light-orange);
   background-color: var(--light-red-grey);
 }
 .sorting p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -1419,7 +1422,7 @@ color: var(--light-orange);
   border: none;
   background-color: transparent;
   /* outline: 2px solid grey; */
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   text-transform: inherit;
   padding: 0;
   color: rgba(0, 0, 0, 0.3);
@@ -1516,7 +1519,7 @@ color: var(--light-orange);
 }
 .pagination-item {
   display: block;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1554,7 +1557,7 @@ color: var(--light-orange);
 }
 .about-instrument p {
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 1px;
@@ -1602,7 +1605,7 @@ color: var(--light-orange);
 }
 .input-container input,
 .input-container textarea {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   width: 100%;
