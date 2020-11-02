@@ -1574,6 +1574,16 @@ img {
   border-top: 7px solid var(--red);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+@keyframes animation {
+  0% {
+    transform: translateY(-120%);
+  }
+  50% {
+    transform: translateY(13%);
+  }
+}
 .modal {
+  animation-name: animation;
+  animation-duration: 0.7s;
   display: block;
 }
