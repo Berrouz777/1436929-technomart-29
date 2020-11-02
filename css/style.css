@@ -517,7 +517,6 @@ img {
   padding-top: 24px;
   padding-left: 23px;
   padding-bottom: 27px;
-  background-image: url("../img/layer99.jpg");
   background-repeat: no-repeat;
   color: var(--white);
   grid-column: 1/3;
@@ -526,6 +525,12 @@ img {
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto 38px;
 }
+.background-special-one {
+  background-image: url("../img/layer99.jpg");
+}
+.background-special-two {
+  background-image: url("../img/layer999.jpg");
+}
 .assortment-item-special-text {
   margin: 0;
   grid-column: 1/2;
@@ -533,11 +538,15 @@ img {
 }
 .assortment-item-special-text span {
   display: inline-block;
+  vertical-align: middle;
   margin-bottom: 5px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.none {
+  display: none;
 }
 .slider {
   padding-top: 19px;
@@ -1309,11 +1318,13 @@ img {
   left: -35px;
   top: -3px;
 }
+.filter-checkbox + label .checkbox-off,
 .filter-checkbox:checked + label .checkbox-on {
-  display: none;
-}
-.filter-checkbox + label .checkbox-off {
   display: block;
+}
+.filter-checkbox + label .checkbox-on,
+.filter-checkbox:checked + label .checkbox-off {
+  display: none;
 }
 .checkbox-on:hover path,
 .checkbox-off:hover path{
@@ -1332,6 +1343,10 @@ img {
 }
 .radio-icon:hover > path {
   fill: var(--middle-light-shade-grey);
+}
+.filter-checkbox:disabled + label svg,
+.filter-radio:disabled + label svg {
+  opacity: 0.3;
 }
 .form-filter .form-button {
   font-family: 'PT Sans', Arial, sans-serif;
