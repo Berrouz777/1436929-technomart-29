@@ -589,6 +589,10 @@ img {
   background-image: url("../img/icon-left.svg");
   transform: rotate(180deg);
 }
+.slider .button-back:focus::before,
+.slider .button-next:focus::before {
+  outline: 2px solid black;
+}
 .assortment-item-special .button {
   width: 192px;
   padding-top: 11px;
