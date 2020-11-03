@@ -98,7 +98,7 @@ img {
   border-bottom: 5px solid var(--blood-red);
 }
 .main-header-logo:active {
-  background-color: var(--blodd-red);
+  background-color: var(--blood-red);
 }
 .main-header-logo img {
   display: block;
