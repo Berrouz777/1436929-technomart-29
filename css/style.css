@@ -552,6 +552,11 @@ img {
 .none {
   display: none;
 }
+.assortment-item-special ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .slider {
   padding-top: 19px;
   width: 30px;
