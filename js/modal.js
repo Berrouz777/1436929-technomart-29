@@ -9,6 +9,19 @@ const specialTextOne = special.querySelector(".assortment-item-special-text:firs
 const specialTextTwo = special.querySelector(".assortment-item-special-text:nth-child(2)");
 const btnNext = special.querySelector(".button-next");
 const btnBack = special.querySelector(".button-back");
+const buyNows = document.querySelectorAll(".buy-now");
+const modalCart = document.querySelector(".modal-add");
+const buttonOff = modalCart.querySelector(".button-off");
+for (buyNow of buyNows) {
+buyNow.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalCart.classList.add("modal-cart");
+});
+};
+buttonOff.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modalCart.classList.remove("modal-cart");
+});
 btnNext.addEventListener("click", function (evt) {
   evt.preventDefault();
   special.classList.remove("background-special-one");
@@ -17,7 +30,7 @@ btnNext.addEventListener("click", function (evt) {
   specialTextTwo.classList.remove("none");
   btnBack.classList.remove("button-slider-active");
   btnNext.classList.add("button-slider-active");
-})
+});
 btnBack.addEventListener("click", function (evt) {
   evt.preventDefault();
   special.classList.add("background-special-one");
@@ -26,7 +39,7 @@ btnBack.addEventListener("click", function (evt) {
   specialTextTwo.classList.add("none");
   btnNext.classList.remove("button-slider-active");
   btnBack.classList.add("button-slider-active");
-})
+});
 clickWriteUs.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalWriteUs.classList.add("modal");

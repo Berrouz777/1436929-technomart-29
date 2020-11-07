@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -74,18 +74,10 @@
     <main class="catalog-main">
       <section class="container">
        <ul class="breadcrumbs">
-        <li>
-         <a class="link_main-page" href="index.html" aria-label="Главная страница"></a>
-        </li>
-        <li>
-         <a href="#">Каталог</a>
-        </li>
-        <li>
-         <a href="#">Инструмент</a>
-        </li>
-        <li>
-         <a href="catalog.html">Перфораторы</a>
-        </li>
+        <li><a class="link_main-page" href="index.html" aria-label="Главная страница"></a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="catalog.html">Перфораторы</a></li>
        </ul>
 
        <h1>Перфораторы</h1>
@@ -107,22 +99,21 @@
                </div>
                <div class="price-controls">
                  <label class="price-min">
-                   <input type="number" name="price-min" value="0">
+                   <input type="number" name="price-min" min="0" max="29999" value="0">
                  </label>
                  <span>&mdash;</span>
                  <label class="price-max">
-                   <input type="number" name="price-max" value="30000">
+                   <input type="number" name="price-max" min="1" max="30000" value="30000">
                  </label>
                </div>
              </div>
            </fieldset>
-           <div class="line"></div>
            <fieldset class="filter-item">
              <legend>Производители:</legend>
              <ul>
                <li class="filter-option">
                  <input class="visually-hidden filter-checkbox" type="checkbox" name="bosch" id="bosch" checked>
-                 <label for="bosch" tabindex="0">Bosch
+                 <label for="bosch">Bosch
                    <svg class="checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
                    </svg>
@@ -134,7 +125,7 @@
                </li>
                <li class="filter-option">
                  <input class="visually-hidden filter-checkbox" type="checkbox" name="интерскол" id="интерскол">
-                 <label for="интерскол" tabindex="0">Интерскол
+                 <label for="интерскол">Интерскол
                    <svg class="checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
                    </svg>
@@ -146,7 +137,7 @@
                </li>
                <li class="filter-option">
                  <input class="visually-hidden filter-checkbox" type="checkbox" name="makita" id="makita" checked>
-                 <label for="makita" tabindex="0">Makita
+                 <label for="makita">Makita
                    <svg class="checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
                    </svg>
@@ -158,7 +149,7 @@
                </li>
                <li class="filter-option">
                  <input class="visually-hidden filter-checkbox" type="checkbox" name="dewalt" id="dewalt">
-                 <label for="dewalt" tabindex="0">Dewalt
+                 <label for="dewalt">Dewalt
                    <svg class="checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
                    </svg>
@@ -170,7 +161,7 @@
                </li>
                <li class="filter-option">
                  <input class="visually-hidden filter-checkbox" type="checkbox" name="hitachi" id="hitachi">
-                 <label for="hitachi" tabindex="0">Hitachi
+                 <label for="hitachi">Hitachi
                    <svg class="checkbox-off" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H20C21.65 0 23 1.35 23 3V20C23 21.65 21.65 23 20 23H3C1.35 23 0 21.65 0 20V3C0 1.35 1.35 0 3 0ZM21 3C21 2.458 20.542 2 20 2H3C2.458 2 2 2.458 2 3V20C2 20.542 2.458 21 3 21H20C20.542 21 21 20.542 21 20V3Z" fill="#C5C5C5"/>
                    </svg>
@@ -182,13 +173,12 @@
                </li>
              </ul>
            </fieldset>
-           <div class="line"></div>
            <fieldset class="filter-item">
              <legend>Питание:</legend>
              <ul>
                <li class="filter-option">
                  <input class="visually-hidden filter-radio" type="radio" name="energy"  value="Аккумуляторные" id="Аккумуляторные" checked>
-                 <label for="Аккумуляторные" tabindex="0">Аккумуляторные
+                 <label for="Аккумуляторные">Аккумуляторные
                    <svg class="radio-icon" width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.3542C0 6.45125 5.597 0.854248 12.5 0.854248C19.403 0.854248 25 6.45125 25 13.3542C25 20.2572 19.403 25.8542 12.5 25.8542C5.597 25.8542 0 20.2572 0 13.3542ZM21 13.3542C21 8.66725 17.187 4.85425 12.5 4.85425C7.813 4.85425 4 8.66725 4 13.3542C4 18.0412 7.813 21.8542 12.5 21.8542C17.187 21.8542 21 18.0412 21 13.3542Z" fill="#C5C5C5"/>
                     <path d="M12.5 17.8542C14.9853 17.8542 17 15.8395 17 13.3542C17 10.869 14.9853 8.85425 12.5 8.85425C10.0147 8.85425 8 10.869 8 13.3542C8 15.8395 10.0147 17.8542 12.5 17.8542Z" fill="#C5C5C5"/>
@@ -197,7 +187,7 @@
                </li>
                <li class="filter-option">
                  <input class="visually-hidden filter-radio" type="radio" name="energy" value="Сетевые" id="Сетевые">
-                 <label for="Сетевые" tabindex="0">Сетевые
+                 <label for="Сетевые">Сетевые
                    <svg class="radio-icon" width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 13.3542C0 6.45125 5.597 0.854248 12.5 0.854248C19.403 0.854248 25 6.45125 25 13.3542C25 20.2572 19.403 25.8542 12.5 25.8542C5.597 25.8542 0 20.2572 0 13.3542ZM21 13.3542C21 8.66725 17.187 4.85425 12.5 4.85425C7.813 4.85425 4 8.66725 4 13.3542C4 18.0412 7.813 21.8542 12.5 21.8542C17.187 21.8542 21 18.0412 21 13.3542Z" fill="#C5C5C5"/>
                     <path d="M12.5 17.8542C14.9853 17.8542 17 15.8395 17 13.3542C17 10.869 14.9853 8.85425 12.5 8.85425C10.0147 8.85425 8 10.869 8 13.3542C8 15.8395 10.0147 17.8542 12.5 17.8542Z" fill="#C5C5C5"/>
@@ -434,6 +424,13 @@
       </div>
       </section>
     </footer>
+
+    <section class="modal-add">
+      <p class="plus-in-cart">Добавлено в корзину</p>
+      <button class="button-off" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <script src="js/modal.js"></script>
 
   </body>
 </html>
