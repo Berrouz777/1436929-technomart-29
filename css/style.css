@@ -549,9 +549,6 @@ img {
   font-weight: bold;
   text-transform: uppercase;
 }
-.none {
-  display: none;
-}
 .assortment-item-special ul {
   margin: 0;
   padding: 0;
@@ -955,27 +952,32 @@ img {
   margin-bottom: 30px;
   color: var(--purple-blue);
 }
-.service-fon {
+.service .service-list {
+  list-style: none;
+  margin: 0;
+  height: 283px;
+}
+.service-list li {
   display: none;
   position: relative;
   width: 619px;
-  height: 283px;
+  height: 100%;
   background-position: 100% 100%;
   background-repeat: no-repeat;
 }
-.shipping {
-  display: block;
+.service-list .shipping {
   background-image: url("../img/shipping.png");
 }
-.garantee {
-  display: block;
+.service-list .garantee {
   background-image: url("../img/guarantee.png");
 }
-.credit {
-  display: block;
+.service-list .credit {
   background-image: url("../img/credit.png");
 }
-.service-fon .button-credit {
+.service-list .active {
+  display: block;
+}
+.service-list .button-credit {
   border: none;
   margin-top: 26px;
   font-size: 14px;
@@ -988,8 +990,9 @@ img {
   padding: 10px 45px;
   cursor: pointer;
 }
-.garantee .heading {
-  margin-bottom: 22px;
+.service-list .garantee-active,
+.service-list .heading-active {
+  margin-bottom: 25px;
 }
 
 /* О нас */
@@ -1767,4 +1770,7 @@ input[type='number'] {
   height: 21px;
   top: -24px;
   right: -24px;
+}
+.none {
+  display: none;
 }

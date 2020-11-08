@@ -79,15 +79,9 @@
           <a class="assortment-item-button" href="">Для стройки</a>
         </div>
         <div class="assortment-item-special background-special-one">
-          <ul>
-            <li>
-              <p class="assortment-item-special-text"><span>Перфораторы</span><br>
-                Настоящие мужские игрушки</p>
-            </li>
-            <li class="none">
-              <p class="assortment-item-special-text"><span>Дрели</span><br>
-                Соседям на радость!</p>
-            </li>
+          <ul class="slider-list">
+            <li><p class="assortment-item-special-text"><span>Перфораторы</span><br>Настоящие мужские игрушки</p></li>
+            <li class="none"><p class="assortment-item-special-text"><span>Дрели</span><br>Соседям на радость!</p></li>
           </ul>
           <div class="slider">
            <button class="button-back button-slider-active" type="button" aria-label="Назад"></button>
@@ -209,27 +203,29 @@
          <button class="service-button" type="button">Гарантия</button>
          <button class="service-button" type="button">Кредит</button>
        </div>
-       <div class="service-fon shipping">
-        <h3 class="heading">Доставка</h3>
-        <p class="text">Мы с удовольствием доставим ваш товар прямо<br>
-          к вашему подъезду совершенно бесплатно!<br>
-          Ведь мы неплохо заработаем,<br>
-          поднимая его на ваш этаж!</p>
-       </div>
-       <div class="service-fon">
-        <h3 class="heading">Гарантия</h3>
-        <p class="text">Если купленный у нас товар поломается или заискрит,<br>
-          а также в случае пожара, спровоцированного его<br>
-          возгоранием,  вы всегда можете быть уверены в нашей<br>
-          гарантии. Мы обменяем сгоревший товар на новый.<br>
-          Дом уж восстановите как-нибудь сами.</p>
-       </div>
-       <div class="service-fon">
-        <h3 class="heading">Кредит</h3>
-        <p class="text">Залезть в долговую яму стало проще!<br>
-          Кредитные консультанты придут вам на помощь.</p>
-        <button class="button-credit" type="button">Отправить заявку</button>
-       </div>
+       <ul class="service-list">
+         <li class="shipping active">
+          <h3 class="heading">Доставка</h3>
+          <p class="text">Мы с удовольствием доставим ваш товар прямо<br>
+           к вашему подъезду совершенно бесплатно!<br>
+           Ведь мы неплохо заработаем,<br>
+           поднимая его на ваш этаж!</p>
+         </li>
+         <li class="garantee">
+          <h3 class="heading">Гарантия</h3>
+          <p class="text">Если купленный у нас товар поломается или заискрит,<br>
+           а также в случае пожара, спровоцированного его<br>
+           возгоранием, вы всегда можете быть уверены в нашей<br>
+           гарантии. Мы обменяем сгоревший товар на новый.<br>
+           Дом уж восстановите как-нибудь сами.</p>
+         </li>
+         <li class="credit">
+          <h3 class="heading">Кредит</h3>
+          <p class="text">Залезть в долговую яму стало проще!<br>
+           Кредитные консультанты придут вам на помощь.</p>
+          <button class="button-credit" type="button">Отправить заявку</button>
+         </li>
+       </ul>
       </div>
     </section>
 
@@ -359,7 +355,8 @@
       <button class="button-off" type="button" aria-label="Закрыть"></button>
     </section>
 
-    <script src="js/modal.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src="js/slider.min.js"></script>
 
   </body>
 </html>
