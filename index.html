@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -49,13 +49,27 @@
 
       <nav class="main-nav container">
         <ul class="list-nav">
-         <li><a title="Находимся на главной странице">Главная</a></li>
-         <li><a href="">Компания</a></li>
-         <li><a href="catalog.html">Каталог</a></li>
-         <li><a href="">Новости</a></li>
-         <li><a href="">Спецпредложения</a></li>
-         <li><a href="">Доставка</a></li>
-         <li><a href="#contacts">Контакты</a></li>
+         <li>
+           <a title="Находимся на главной странице">Главная</a>
+         </li>
+         <li>
+           <a href="">Компания</a>
+         </li>
+         <li>
+           <a href="catalog.html">Каталог</a>
+         </li>
+         <li>
+           <a href="">Новости</a>
+         </li>
+         <li>
+           <a href="">Спецпредложения</a>
+         </li>
+         <li>
+           <a href="">Доставка</a>
+         </li>
+         <li>
+           <a href="#contacts">Контакты</a>
+         </li>
        </ul>
       </nav>
     </header>
@@ -78,19 +92,26 @@
           <p class="assortment-item-text">Техника</p>
           <a class="assortment-item-button" href="">Для стройки</a>
         </div>
-        <div class="assortment-item-special background-special-one">
+        <div class="assortment-item-special">
           <ul class="slider-list">
-            <li><p class="assortment-item-special-text"><span>Перфораторы</span><br>Настоящие мужские игрушки</p></li>
-            <li class="none"><p class="assortment-item-special-text"><span>Дрели</span><br>Соседям на радость!</p></li>
+            <li >
+              <img src="img/layer99.jpg" width="620" height="266" alt="Мужчина в наушниках с большим перфоратор Bosch сверлит стену">
+              <p class="assortment-item-special-text"><span>Перфораторы</span><br>Настоящие мужские игрушки</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="none">
+              <img src="img/layer999.jpg" width="620" height="266" alt="Мужчина с щетиной в очках перфоратор Bosch сверлит стену крупным планом">
+              <p class="assortment-item-special-text"><span>Дрели</span><br>Соседям на радость!</p>
+              <a class="button" href="catalog/drill.html">Открыть каталог</a>
+            </li>
           </ul>
           <div class="slider">
            <button class="button-back button-slider-active" type="button" aria-label="Назад"></button>
            <button class="button-next" type="button" aria-label="Вперед"></button>
           </div>
-          <a class="button" href="catalog.html">Открыть каталог</a>
         </div>
         <div class="assortment-item">
-          <p class="assortment-item-text">Скидка 50%</p>
+          <p class="assortment-item-text">Скидки 50%</p>
           <a class="assortment-item-button" href="">на 350 товаров</a>
         </div>
         <div class="assortment-item">
@@ -266,15 +287,33 @@
         <p class="footer-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55</p>
         <ul class="footer-menu-list">
-          <li class="footer-menu-item"><a href="">Компания</a></li>
-          <li class="footer-menu-item"><a href="">Новости</a></li>
-          <li class="footer-menu-item"><a href="catalog.html">Каталог</a></li>
-          <li class="footer-menu-item"><a href="">Доставка</a></li>
-          <li class="footer-menu-item"><a href="#contacts">Контакты</a></li>
-          <li class="footer-menu-item"><a href="">Материалы</a></li>
-          <li class="footer-menu-item"><a href="">Техника</a></li>
-          <li class="footer-menu-item"><a href="">Инструмент</a></li>
-          <li class="footer-menu-item"><a href="">Спецпредложения</a></li>
+          <li class="footer-menu-item">
+            <a href="">Компания</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="">Новости</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="">Доставка</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#contacts">Контакты</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="">Материалы</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="">Техника</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="">Инструмент</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="">Спецпредложения</a>
+          </li>
         </ul>
       </section>
      </div>
@@ -338,11 +377,11 @@
         </div>
         <div>
           <div class="modal-container">
-           <button class="modal-button">Отправить</button>
+           <button class="modal-button" type="submit">Отправить</button>
           </div>
         </div>
       </form>
-      <button class="close-button" type="submit" aria-label="Закрыть"></button>
+      <button class="close-button" type="button" aria-label="Закрыть"></button>
     </section>
     <section class="modal-map">
       <h2 class="visually-hidden">Как к нам добраться?</h2>
@@ -351,8 +390,12 @@
     </section>
 
     <section class="modal-add">
-      <p class="plus-in-cart">Добавлено в корзину</p>
-      <button class="button-off" type="button" aria-label="Закрыть"></button>
+      <p class="plus-in-cart">Товар добавлен в корзину!</p>
+      <button class="close-button" type="button" aria-label="Закрыть"></button>
+      <div class="modal-buttons">
+        <button type="button">Оформить заказ</button>
+        <button type="button">Продолжить покупки</button>
+      </div>
     </section>
 
     <script src="js/modal.min.js"></script>

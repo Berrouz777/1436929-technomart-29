@@ -6,14 +6,14 @@ const closeWriteUs = modalWriteUs.querySelector(".close-button");
 const closeMap = modalShowMap.querySelector(".close-button");
 const buyNows = document.querySelectorAll(".buy-now");
 const modalCart = document.querySelector(".modal-add");
-const buttonOff = modalCart.querySelector(".button-off");
+const closeAdd = modalCart.querySelector(".close-button");
 for (buyNow of buyNows) {
 buyNow.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalCart.classList.add("modal-cart");
 });
 };
-buttonOff.addEventListener("click", function (evt) {
+closeAdd.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalCart.classList.remove("modal-cart");
 });

@@ -20,6 +20,7 @@
 --light-green: #8ED78F;
 --sort-of-light-grey: #F9F5F0;
 --different-light-grey: #F1F5F7;
+--modal-light-grey: #F1F1F1;
 --light-orange: #FFD180;
 --border-color: #EAEAEA;
 --deep-green: #367315;
@@ -517,28 +518,15 @@ img {
 }
 .assortment-item-special {
   position: relative;
-  padding-top: 24px;
-  padding-left: 23px;
-  padding-bottom: 27px;
-  background-repeat: no-repeat;
-  background-color: var(--middle-grey);
-  color: var(--white);
   grid-column: 1/3;
   grid-row: 2/4;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto 38px;
-}
-.background-special-one {
-  background-image: url("../img/layer99.jpg");
-}
-.background-special-two {
-  background-image: url("../img/layer999.jpg");
 }
 .assortment-item-special-text {
+  position: absolute;
   margin: 0;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  top: 24px;
+  left: 23px;
+  color: var(--white);
 }
 .assortment-item-special-text span {
   display: inline-block;
@@ -555,11 +543,12 @@ img {
   list-style: none;
 }
 .slider {
-  padding-top: 19px;
+  position: absolute;
+  top: 220px;
+  left: 295px;
   width: 30px;
   grid-column: 2/3;
   grid-row: 3/4;
-  margin-left: 55px;
   display: flex;
   justify-content: space-between;
 }
@@ -581,8 +570,8 @@ img {
   position: absolute;
   width: 22px;
   height: 40px;
-  left: 24px;
-  top: 122px;
+  left: -270px;
+  top: -97px;
   background-image: url("../img/icon-left.svg");
 }
 .slider .button-next::before {
@@ -590,8 +579,8 @@ img {
   position: absolute;
   width: 22px;
   height: 40px;
-  right: 20px;
-  top: 122px;
+  right: -275px;
+  top: -97px;
   background-image: url("../img/icon-left.svg");
   transform: rotate(180deg);
 }
@@ -600,13 +589,14 @@ img {
   outline: 2px solid black;
 }
 .assortment-item-special .button {
+  position: absolute;
+  top: 201px;
+  left: 24px;
   width: 192px;
+  height: 27px;
   padding-top: 11px;
-  box-sizing: border-box;
   text-align: center;
   text-transform: uppercase;
-  grid-column: 1/2;
-  grid-row: 3/4;
 }
 .assortment-item-special .button:hover {
   background-color: var(--light-blood-red);
@@ -1711,65 +1701,58 @@ input[type='number'] {
   display: none;
   position: fixed;
   font-family: 'Cuprum', 'Arial', sans-serif;
-  color: var(--white);
-  background-color: var(--red);
-  border: 1px solid var(--white);
-  border-radius: 3px;
-  bottom: 5%;
-  right: 3%;
+  width: 620px;
+  height: 276px;
+  background-color: var(--white);
+  box-shadow: 0 4px 20px 0 var(--border-color);
+  border-top: 7px solid var(--red);
+  top: 25%;
+  left: 30.5%;
+}
+.modal-add div {
+  height: 112px;
+  background-color: var(--modal-light-grey);
 }
 .plus-in-cart {
-  /* outline: 1px solid black; */
   position: relative;
-  margin: 0;
-  padding: 10px 15px 10px 40px;
-}
-@keyframes scale-cart {
-  30% {
-    transform: scale(1);
-  }
-  40% {
-    transform: scale(1.6);
-  }
-  50% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(1.5);
-  }
-  70% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(1.4);
-  }
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  height: 98px;
+  padding-top: 66px;
+  position: relative;
+  margin: auto;
+  text-align: center;
 }
 .plus-in-cart::before {
-  /* outline: 1px solid black; */
   content: "";
   position: absolute;
-  top: 15px;
-  left: 12px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/cart.svg");
-  animation-name: scale-cart;
-  animation-duration: 2s;
+  top: 48px;
+  left: 81px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icon-mark.svg");
+}
+.modal-buttons button {
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--white);
+  border: none;
+  width: 192px;
+  height: 38px;
+  margin-top: 37px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.modal-buttons button:first-of-type {
+  background-color: var(--red);
+  color: var(--white);
+  margin-left: 115px;
+  margin-right: 10px;
 }
 .modal-cart {
   display: block;
-  animation-name: cart-on;
-  animation-duration: 0.4s;
-}
-.button-off {
-  position: absolute;
-  background-image: url("../img/icon-close.svg");
-  background-color: transparent;
-  border: none;
-  width: 21px;
-  height: 21px;
-  top: -24px;
-  right: -24px;
 }
 .none {
   display: none;
